@@ -1,0 +1,37 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Expense Category";
+}
+
+@model ExpenseTracker.Models.ExpenseCategory
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<div>
+    <div class="row">
+        <div class="text-center mt-5 mb-3">
+            <h2>Add New Expense Category</h2>
+        </div>
+        <hr />
+        <div class="col-md-8 mt-5">
+            <form method="post" asp-action="Create">
+                <input type="hidden" asp-for="ExpenseCategoryId" />
+                <div class="form-group">
+                    <label asp-for="ExpenseCategoryName" class="control-label">Expense Category</label>
+                    <input asp-for="ExpenseCategoryName" class="form-control mt-2" />
+                    <span asp-validation-for="ExpenseCategoryName" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-2">
+                    <button type="submit" id="btnSubmit" class="btn btn-block btn-success ">Save</button>
+                    <a href="/ExpenseCategory" class="btn btn-info mx-3">Back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
