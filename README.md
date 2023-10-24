@@ -17,7 +17,7 @@ This application was developed as part of the project for Web Development and De
   # Instructions of Run This Project
 
   1. Clone the This Project:
-     - Use git clone /**/ to download the project from the GitHub repository.
+     - Use git clone *https://github.com/harshgodkar/WAD_dotNETCore_Expense_Tracker.git* to download the project from the GitHub repository.
 
   2. Configure The Project:
      - Open Project Solution in Visual Studio 2022
